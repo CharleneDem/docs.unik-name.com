@@ -40,7 +40,7 @@ export default {
       const {
         repo,
         docsDir = '',
-        docsBranch = 'master',
+        docsBranch = process.env.BRANCH || 'master',
         docsRepo = repo
       } = this.$site.themeConfig
 
